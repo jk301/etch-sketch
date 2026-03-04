@@ -3,21 +3,83 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    background-color: #1f2937;
+    font-family: sans-serif;
 }
 
 .header {
-    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    width: 500px;
+}
+
+#grid-text {
+    color : white;
+    padding: 10px;
 }
 
 #input-size {
-    margin: 20px;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 30px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #111827; 
+    color: #f9fafb;
+    outline: none;
+    transition: 0.2s ease;
 }
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.4);
+}
+
+
+button {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background-color: #3b82f6; /* blue */
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 10px;
+}
+
+
+button:hover {
+  background-color: #2563eb; /* darker blue */
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
 
 .main-container { 
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    background-color: silver;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(85, 84, 84, 0.899);
     height : 500px;
     width: 500px;
 }
