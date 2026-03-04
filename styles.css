@@ -13,7 +13,7 @@ body {
     justify-content: left;
     align-items: center;
     padding: 20px;
-    width: 500px;
+    width: 700px;
 }
 
 #grid-text {
@@ -69,6 +69,16 @@ button:active {
 button:focus {
   outline: none;
   box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+#radio-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    color: #f9fafb;
 }
 
 
